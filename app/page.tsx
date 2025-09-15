@@ -46,7 +46,6 @@ import IntDevLogo from '@components/svg/IntDevLogo';
 import ListItem from '@components/ListItem';
 import Message from '@components/Message';
 import MessageViewer from '@components/MessageViewer';
-import MessagesInterface from '@components/examples/MessagesInterface';
 import ModalAlert from '@components/modals/ModalAlert';
 import ModalCanvasSnake from '@components/modals/ModalCanvasSnake';
 import ModalCanvasPlatformer from '@components/modals/ModalCanvasPlatformer';
@@ -1048,7 +1047,6 @@ int main() {
           <br />
           <br />
           <Card title="MESSAGES">
-            <MessagesInterface />
           </Card>
           <br />
         </Accordion>

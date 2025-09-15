@@ -20,9 +20,6 @@
       "@components/*": [
         "./components/*"
       ],
-      "@pages/*": [
-        "./pages/*"
-      ],
       "@modules/*": [
         "./modules/*"
       ]
