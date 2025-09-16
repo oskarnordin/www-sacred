@@ -541,4 +541,21 @@ body {
   &::-webkit-scrollbar-thumb:hover {
     background: var(--theme-border);
   }
+
+  max-width: 60%;
+  margin-inline: auto;
+}
+
+.portfolio-layout {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row; /* sidebar on the RIGHT */
+}
+
+.portfolio-layout > main { flex: 1 1 auto; min-width: 0; }
+.portfolio-layout > aside { flex: 0 0 18rem; }
+
+@media (max-width: 900px) {
+  .portfolio-layout { flex-direction: column; }
+  .portfolio-layout > aside { order: -1; /* optional: move above on mobile */ }
 }

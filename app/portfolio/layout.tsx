@@ -6,11 +6,11 @@ import PortfolioSidebar from '@components/PortfolioSidebar';
 
 export default function PortfolioLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <Navigation left={<span>PORTFOLIO</span>} />
-      <SidebarLayout sidebar={<PortfolioSidebar />} isShowingHandle defaultSidebarWidth={32}>
-        {children}
-      </SidebarLayout>
-    </>
+    <div className="portfolio-layout">
+      <main>{children}</main>
+      <aside>
+        <PortfolioSidebar />
+      </aside>
+    </div>
   );
 }

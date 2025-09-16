@@ -9,7 +9,7 @@ export default function PortfolioHome() {
       <div style={{ display: 'flex', gap: '1ch', alignItems: 'flex-start', marginBottom: '2ch' }}>
         <Block />
         <div>
-          <h1 style={{ margin: 0 }}>Ocke</h1>
+          <h1 style={{ margin: 0 }}>Oskar</h1>
           <p style={{ marginTop: '0.5ch', maxWidth: '72ch' }}>
             Welcome. This space highlights selected work, experiments, and interests.
           </p>

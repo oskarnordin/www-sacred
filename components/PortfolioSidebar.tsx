@@ -19,7 +19,7 @@ const PortfolioSidebar: React.FC = () => {
         <div><Link href="/portfolio/contact">Contact</Link></div>
       </nav>
       <Divider />
-      <Button as="a" href="/landing" theme="SECONDARY">Landing</Button>
+      {/* <Button as="a" href="/landing" theme="SECONDARY">Landing</Button> */}
     </div>
   );
 };
