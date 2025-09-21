@@ -5,22 +5,26 @@ import styles from '@components/Button.module.scss';
 import * as React from 'react';
 import * as Utilities from '@common/utilities';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   as?: 'button' | 'a'; // <-- polymorphic
   theme?: 'PRIMARY' | 'SECONDARY';
   isDisabled?: boolean;
   href?: string; // needed if it's an <a>
+  target?: React.HTMLAttributeAnchorTarget; // e.g. "_blank"
+  rel?: string; // e.g. "noopener noreferrer"
   children?: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({
+export default function Button({
   as = 'button',
   theme = 'PRIMARY',
   isDisabled,
   children,
   href,
+  target,
+  rel,
   ...rest
-}) => {
+}: ButtonProps) {
   let classNames = Utilities.classNames(styles.root, styles.primary);
 
   if (theme === 'SECONDARY') {
@@ -32,9 +36,9 @@ const Button: React.FC<ButtonProps> = ({
     return <div className={classNames}>{children}</div>;
   }
 
-  if (as === 'a') {
+  if (href) {
     return (
-      <a className={classNames} href={href} {...rest}>
+      <a className={classNames} href={href} target={target} rel={rel} {...rest}>
         {children}
       </a>
     );
@@ -46,5 +50,3 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;

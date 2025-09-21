@@ -1,5 +1,7 @@
 .root {
-  padding-left: 1ch;
+  /* Add a small left margin so the bullet marker isn't too close to borders */
+  margin-left: 1.5ch;
+  padding-left: 0;
 
   &:focus {
     outline: 0;

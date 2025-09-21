@@ -16,21 +16,20 @@ export default function TechStackPage() {
       <Divider />
       <div
         style={{
-          display: 'grid',
+          width: '100%',
           gap: '2ch',
           marginTop: '2ch',
           gridTemplateColumns: 'repeat(auto-fill, minmax(36ch, 1fr))',
         }}
       >
 
-        
         <Card title="My Tech Stack">
           <div
             style={{
               display: 'flex',
+              width: '100%',
               gap: '2ch',
-              flexWrap: 'wrap',
-              alignItems: 'stretch',
+              flexWrap: 'wrap', 
               justifyContent: 'center',
             }}
           >

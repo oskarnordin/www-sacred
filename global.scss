@@ -140,6 +140,7 @@ video {
   vertical-align: baseline;
 }
 
+
 a {
   background: var(--theme-border-subdued);
   color: var(--theme-text);
@@ -362,8 +363,7 @@ body.font-use-sfmono-square {
   --font-family-mono: 'SFMonoSquare-Regular', sans-serif;
 }
 
-#__next {
-}
+/* removed empty #__next ruleset */
 
 html,
 body {
@@ -541,9 +541,14 @@ body {
   &::-webkit-scrollbar-thumb:hover {
     background: var(--theme-border);
   }
+}
 
-  max-width: 60%;
+/* Central site container: controls page width and padding */
+.site-container {
+  width: 100%;
+  max-width: 1200px;
   margin-inline: auto;
+  padding: clamp(16px, 3vw, 30px);
 }
 
 .portfolio-layout {
@@ -558,4 +563,5 @@ body {
 @media (max-width: 900px) {
   .portfolio-layout { flex-direction: column; }
   .portfolio-layout > aside { order: -1; /* optional: move above on mobile */ }
+  .portfolio-layout .sidebar-selfie { display: none; }
 }

@@ -5,18 +5,18 @@ import Button from '@components/Button';
 export default function ContactPage() {
   return (
     <div style={{ padding: '2ch' }}>
-      <Block>
-        <h1>Contact</h1>
-        <p>Ways to reach out or follow along.</p>
-      </Block>
+        <h1>Hello World</h1>
+          <p style={{ marginTop: '0.5ch', maxWidth: '72ch' }}>
+            Welcome. This space highlights selected work, experiments, and interests.
+          </p>
       <Divider />
+      <p>Ways to reach out or follow along.</p>
       <ul>
-        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/your-handle" target="_blank">github.com/your-handle</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank">linkedin.com/in/your-handle</a></li>
+        <li>Email: <a href="mailto:oskarnordin1@gmail.com">oskarnordin1@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/oskarnordin" target="_blank">github.com/oskarnordin</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/oskarnordin" target="_blank">linkedin.com/in/oskarnordin</a></li>
       </ul>
-      <Divider />
-      <Button as="a" href="/portfolio" theme="SECONDARY">Back</Button>
+
     </div>
   );
 }

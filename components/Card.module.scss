@@ -74,3 +74,9 @@
   font-size: var(--font-size);
   font-weight: 400;
 }
+
+.root {
+  display: block;
+  width: 100%;
+  max-width: none; // ensure no max-width caps it
+}

@@ -13,13 +13,12 @@ const PortfolioSidebar: React.FC = () => {
 
       <Divider />
       <nav>
-        <div><Link href="/portfolio">Home</Link></div>
+  <div><Link href="/portfolio">About</Link></div>
         <div><Link href="/portfolio/projects">Projects</Link></div>
-        <div><Link href="/portfolio/about">About</Link></div>
+  <div><Link href="/portfolio/tech-stack">Tech Stack</Link></div>
         <div><Link href="/portfolio/contact">Contact</Link></div>
       </nav>
       <Divider />
-      {/* <Button as="a" href="/landing" theme="SECONDARY">Landing</Button> */}
     </div>
   );
 };
